@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leleyow</title>
+<style>
+#myHeader {
+  background-color: darkblue;
+  color: white;
+  font-family: Brush Script MT;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;}
+
+	
+.yeah {
+  background-color: lightblue;
+  color: darkblue;
+  padding: 20px;}
+
+
+</style>
+</head>
+<body>
+<h1 id="myHeader"><marquee> Hi! Welcome to Leleyow's Website! </marquee> </h1>
+<img src="Leleyow.png" style="float:right;width:250px;height:260px;">
+<h2> Want to know more about Lerrlyn Neverio?</h2>
+<h2 class="yeah">Lele's Info</h2>
+<p style="font-size:18px";>Full Name: Lerrlyn Distura Neverio <br> Nickname: Lele <br> Birthdate: February 20, 2002 <br> Age: 20 yrs old
+<br> School: Asia Pacific College <br> Course: Bachelor of Science in Information Technology Specializing
+ Mobile and Internet Technology</p>
+
+
+
+<h2 class="yeah" style="text-align: center;">&copy;Lerrlyn Neverio 2022</h2>
+
+
+</body>
+</html>
