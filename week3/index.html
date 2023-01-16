@@ -1,31 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Taylor Swift</title>
-<script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "Let's Go, Swifties!!!";
-    }
-    </script>
-</head>
-<body style="background-color:powderblue;">
-    <p id="demo">Are you a fan of Taylor?</p>
-    <button type="button" onclick="myFunction()">Click it</button>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<h1 style="font-size:60px;"> <i> Song of Taylor Swift </i> </h1>
-<hr>
-<p style="color:red;"> Taylor Swift is <b> awesome. </b> </p>
-<img src="Taylor Swift.jpg" alt="Taylor">
-<!--
-<p> Also, Taylor is beautiful </p>
--->
-<p> With a total of <span style="color:blue;font-weight:bold;"> 42 nominations </span>, 
-    Taylor Swift won <span style="color:blue;font-weight:bold;">11</span> Grammy Award. </p>
-<hr>
-<p style="color:red;"> This is one of my favorite song of Taylor Swift </p>
-<a href="https://www.youtube.com/watch?v=VikHHWrgb4Y"> Cornelia Street </a>
-<p> My favorite line is: <q> And baby, I get mystified by how this city screams your name <br>
-    And baby, I'm so terrified of if you ever walk away <br>
-    I'd never walk Cornelia Street again</q></p>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: blue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: lightblue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: powderblue;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: blue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Taylor's Song</h2>
+<p>In this part, it shows the songs and its lyrics that stuck in head hehe.</p>
+
+<header>
+  <h2>Song Lyrics</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Love Story</a></li>
+      <li><a href="#">Story of Us</a></li>
+      <li><a href="#">Cornelia Street</a>
+      <li><a href="#">Anti Hero</a></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Love Story</h1>
+    <p>I got tired of waiting<br>
+Wondering if you were ever coming around<br>
+My faith in you was fading<br>
+When I met you on the outskirts of town<br>
+And I said</p>
+    <br>
+    <p>"Marry me, Juliet, you'll never have to be alone<br>
+I love you, and that's all I really know<br>
+I talked to your dad, go pick out a white dress<br>
+It's a love story, baby, just say yes"</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
 </body>
 </html>

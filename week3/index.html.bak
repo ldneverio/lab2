@@ -1,62 +1,31 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Leleyow</title>
-<style>
-#myHeader {
-  background-color: darkblue;
-  color: white;
-  font-family: Brush Script MT;
-  font-size: 50px;
-  padding: 10px;
-  text-align: center;}
-body {background-color:powderblue;
-  background-image: url('bluethunder1.png')
-}
-.yeah {
-  background-color: lightblue;
-  color: darkblue;
-  padding: 20px;}
-
-  table, th, td {
-  border:2px solid black;
-  text-align:center;
-  background-color: cornflowerblue;
-}
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
-}
-</style>
+<title>Taylor Swift</title>
+<script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Let's Go, Swifties!!!";
+    }
+    </script>
 </head>
-<body>
-<h1 id="myHeader"><marquee> Hi! Welcome to Leleyow's Website! </marquee> </h1>
-<img src="Leleyow.png" style="float:right;width:250px;height:260px;">
-<h2> Want to know more about Lerrlyn Neverio?</h2>
-<h2 class="yeah">Lele's Info</h2>
-<p style="font-size:18px";>Full Name: Lerrlyn Distura Neverio <br> Nickname: Lele <br> Birthdate: February 20, 2002 <br> Age: 20 yrs old
-<br> School: Asia Pacific College <br> Course: Bachelor of Science in Information Technology Specializing
- Mobile and Internet Technology</p>
+<body style="background-color:powderblue;">
+    <p id="demo">Are you a fan of Taylor?</p>
+    <button type="button" onclick="myFunction()">Click it</button>
 
-<h2 class="yeah" style="text-align: center;">Things that Lele loves to do and what she loves.</h2>
-
-<table class="center"; style="width:40%";>
-  <tr> 
-    <th style="width:20%"> Me</th>
-    <th style="width:20%"> Things that I loves</th>
-  </tr>
-
-  <tr>
-    <td > <img src="guitar.png" style="width:200px;height:260px; "> </td>
-    <td> When I am bored, I usually play guitar and play any songs that I want. </td>
-  </tr>
-
-  <tr>
-    <td > <img src="food.jpg" style="width:200px;height:260px; "> </td>
-    <td> Fooooddss!!! I really love to eat a lot, especially when I am sad and of course, when I am hungry. </td>
-  </tr>
-
-</table>
-<h2 class="yeah" style="text-align: center;">&copy;Lerrlyn Neverio 2022</h2>
-
+<h1 style="font-size:60px;"> <i> Song of Taylor Swift </i> </h1>
+<hr>
+<p style="color:red;"> Taylor Swift is <b> awesome. </b> </p>
+<img src="Taylor Swift.jpg" alt="Taylor">
+<!--
+<p> Also, Taylor is beautiful </p>
+-->
+<p> With a total of <span style="color:blue;font-weight:bold;"> 42 nominations </span>, 
+    Taylor Swift won <span style="color:blue;font-weight:bold;">11</span> Grammy Award. </p>
+<hr>
+<p style="color:red;"> This is one of my favorite song of Taylor Swift </p>
+<a href="https://www.youtube.com/watch?v=VikHHWrgb4Y"> Cornelia Street </a>
+<p> My favorite line is: <q> And baby, I get mystified by how this city screams your name <br>
+    And baby, I'm so terrified of if you ever walk away <br>
+    I'd never walk Cornelia Street again</q></p>
 </body>
 </html>
