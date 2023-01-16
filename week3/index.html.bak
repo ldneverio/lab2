@@ -2,6 +2,9 @@
 <html>
 <head>
 <style>
+h1 {text-decoration: line-through;
+	color: red;
+	font: italic bold 29px/50px Georgia, serif;}
 div {
   background-color: lightblue;
 }
@@ -22,7 +25,8 @@ p.dotted {border-style: dotted;
 		margin: 50px 50px 75px 100px;
 		background-color: powderblue;
 		padding: 25px 50px 75px 100px;
-		color: darkblue;}
+		color: darkblue;
+		bold 12px/30px Georgia, serif;}
 </style>
 </head>
 <body>
