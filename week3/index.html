@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+div {
+  background-color: green;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+</style>
+</head>
 <body>
 
-<p>Same as color name "Tomato":</p>
+<h1>Transparent Boxes</h1>
 
-<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
-<h1 style="background-color:#ff6347;">#ff6347</h1>
-<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
 
-<p>Same as color name "Tomato", but 50% transparent:</p>
-<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+<div class="first">
+  <h1>HI! I AM GROOT!</h1>
+</div>
 
-<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+<div class="second">
+  <h1>HI! I AM GROOT!</h1>
+</div>
+
+<div class="third">
+  <h1>HI! I AM GROOT!</h1>
+</div>
+
+<div>
+  <h1>HI! I AM GROOT(default)</h1>
+</div>
 
 </body>
 </html>

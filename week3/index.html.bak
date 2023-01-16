@@ -2,27 +2,47 @@
 <html>
 <head>
 <style>
-body {
-  background-color: lightblue;
+div {
+  background-color: green;
 }
 
-h1 {
-  color: white;
-  text-align: center;
+div.first {
+  opacity: 0.1;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
 }
 </style>
 </head>
 <body>
 
-<h1>My First CSS Example</h1>
-<p>Hi Guys! Im doing my week 4 activity hehe</p>
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1>HI! I AM GROOT!</h1>
+</div>
+
+<div class="second">
+  <h1>HI! I AM GROOT!</h1>
+</div>
+
+<div class="third">
+  <h1>HI! I AM GROOT!</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
 
 </body>
 </html>
+
 
 
