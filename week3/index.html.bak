@@ -3,7 +3,7 @@
 <head>
 <style>
 div {
-  background-color: green;
+  background-color: lightblue;
 }
 
 div.first {
@@ -18,9 +18,11 @@ div.third {
   opacity: 0.6;
 }
 p.dotted {border-style: dotted; 
+		outline-style: double;
 		margin: 50px 50px 75px 100px;
-		background-color: lightblue;
-		padding: 25px 50px 75px 100px;}
+		background-color: powderblue;
+		padding: 25px 50px 75px 100px;
+		color: darkblue;}
 </style>
 </head>
 <body>
