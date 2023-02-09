@@ -38,12 +38,15 @@ table.center {
 </head>
 <body>
 <h1 id="myHeader"><marquee> Hi! Welcome to Leleyow's Website! </marquee> </h1>
-
+<button class="button4"; id="myBtn">Hi :)</button>
 <button class="button1"; onclick="gotoLink(this)" value="https://www.facebook.com/le.neverio">Facebook</button> 
 <button class="button2"; onclick="gotoLink(this)" value="https://www.instagram.com/leneverio/">Instagram</button>
 <button class="button3": blue; onclick="gotoLink(this)" value="https://www.linkedin.com/in/lerrlyn-neverio-979b8821a/">LinkedIn</button>
 
 <script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hi! I just wanted to say that, thank you for visiting my page :) Hope you'll like it!");
+});
 
 function gotoLink(link){
  window.location="link.value";
