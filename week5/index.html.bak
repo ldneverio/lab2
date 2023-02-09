@@ -2,15 +2,7 @@
 <html>
 <head>
 <title>Leleyow</title>
-<script>
-function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Please say something about my website so I can improve it. Thank you!");
-    return false;
-  }
-}
-</script>
+
 
 <style>
 #myHeader {
@@ -126,6 +118,15 @@ document.getElementById("demo").innerHTML =
 myPerson.name + " " + myPerson.year;
 </script>
 
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Please say something about my website so I can improve it. Thank you!");
+    return false;
+  }
+}
+</script>
 
 <h3> Hi! Put any comment/s about my website. Thank you! </h3>
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
@@ -133,7 +134,13 @@ myPerson.name + " " + myPerson.year;
   <in
 
 
+<button onclick="setTimeout(myFunction, 3000);">Click me, after your comment</button>
 
+<script>
+function myFunction() {
+  alert('Really appreciated your visit in my website :)');
+}
+</script>
 
 
 
