@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Leleyow</title>
+
+
 <style>
 #myHeader {
   background-color: darkblue;
@@ -116,6 +118,20 @@ document.getElementById("demo").innerHTML =
 myPerson.name + " " + myPerson.year;
 </script>
 
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Please say something about my website so I can improve it. Thank you!");
+    return false;
+  }
+}
+</script>
+
+<h3> Hi! Put any comment/s about my website. Thank you! </h3>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Comment/s:  <input type="text" name="fname">
+  <in
 
 
 
