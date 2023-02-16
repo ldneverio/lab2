@@ -133,9 +133,8 @@ function validateForm() {
   Comment/s:  <input type="text" name="fname">
   <in
 
-<p>Click "<3". After you put comment/s hehe.</p>
 
-<button onclick="setTimeout(myFunction, 3000);"> <3 </button>
+<button onclick="setTimeout(myFunction, 3000);">Click me, after your comment</button>
 
 <script>
 function myFunction() {
