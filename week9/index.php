@@ -82,7 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = test_input($_POST["email"]);
   $website = test_input($_POST["website"]);
   $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
 }
 function test_input($data) {
   $data = trim($data);
@@ -101,11 +100,6 @@ function test_input($data) {
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"></textarea>
   <br><br>
-  Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
-  <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
 <?php
@@ -118,7 +112,36 @@ echo $website;
 echo "<br>";
 echo $comment;
 echo "<br>";
-echo $gender;
+?>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+
+	$servername = "192.168.150.213";
+	$username = "webprogmi211";
+	$password = "j@zzyAngle30";
+	$dbname = "webprogmi211";
+	
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+	}
+	
+	$sql = "INSERT INTO ldneverio_myguests (name, email, website, comment)
+	VALUES ('$name', '$email', '$website', '$comment')";
+	
+  if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+	
+	$conn->close();
+}
 ?>
 
 </body>
